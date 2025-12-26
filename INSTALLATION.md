@@ -1,5 +1,49 @@
 # Installation Guide
 
+## Installation via Marketplace (Recommended)
+
+The easiest way to install skills from this repository is through the Claude Code plugin marketplace.
+
+### Add the Marketplace
+
+```bash
+# Add this marketplace to Claude Code (replace <repository-url> with the actual GitHub URL)
+claude plugin marketplace add <repository-url>
+
+# Or if the repo is on GitHub, you can use the shorthand:
+claude plugin marketplace add fcamblor/cc-skills
+```
+
+### Install Skills
+
+```bash
+# Install a specific skill
+claude plugin install typescript-standards@fcamblor-cc-skills
+
+# Install the template skill (useful for creating new skills)
+claude plugin install template-skill@fcamblor-cc-skills
+
+# List all available skills in the marketplace
+claude plugin marketplace list fcamblor-cc-skills
+
+# Update an installed skill
+claude plugin update typescript-standards@fcamblor-cc-skills
+
+# Remove a skill
+claude plugin uninstall typescript-standards
+```
+
+### Marketplace Benefits
+
+- **Easy updates**: Update skills with a single command
+- **Version management**: Track and manage skill versions
+- **Discoverability**: Browse all available skills
+- **Automatic installation**: Skills are installed to the correct location
+
+## Manual Installation (Alternative)
+
+If you prefer manual installation, you can copy skills directly to your project or global skills directory.
+
 ## Quick Start
 
 ### Add a Skill to Your Current Project

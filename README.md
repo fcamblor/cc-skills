@@ -98,7 +98,26 @@ Regular Markdown content with instructions, guidelines, examples, etc.
 
 ## How to Use Skills from This Repository
 
-### Option 1: Copy a Single Skill to Your Project
+### Option 1: Install via Marketplace (Recommended)
+
+Add this marketplace to Claude Code to easily install and manage skills:
+
+```bash
+# Add the marketplace (replace <repository-url> with the actual GitHub URL)
+claude plugin marketplace add <repository-url>
+
+# Or if the repo is on GitHub, you can use the shorthand:
+claude plugin marketplace add fcamblor/cc-skills
+
+# Install a specific skill from the marketplace
+claude plugin install typescript-standards@fcamblor-cc-skills
+claude plugin install template-skill@fcamblor-cc-skills
+
+# List available skills in the marketplace
+claude plugin marketplace list fcamblor-cc-skills
+```
+
+### Option 2: Copy a Single Skill to Your Project
 
 ```bash
 # Add the skill to your current project's .claude/skills/
@@ -107,7 +126,7 @@ cp -r cc-skills/skills/skill-name ./.claude/skills/
 # Now the skill is available only in this project
 ```
 
-### Option 2: Copy a Skill to Your Personal Skills
+### Option 3: Copy a Skill to Your Personal Skills
 
 ```bash
 # Add the skill to your personal global skills
@@ -116,7 +135,7 @@ cp -r cc-skills/skills/skill-name ~/.claude/skills/
 # Now the skill is available across all projects
 ```
 
-### Option 3: Clone the Entire Repository
+### Option 4: Clone the Entire Repository
 
 ```bash
 # Clone for reference or bulk skill access
